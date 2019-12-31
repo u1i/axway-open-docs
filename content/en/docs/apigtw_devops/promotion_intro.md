@@ -20,7 +20,7 @@ In the following diagram, each environment is implemented as a distinct API Gate
 
 The API Gateway configuration is deployed to a group of API Gateways. Therefore, each domain consists of the required API Gateway groups to run the configurations. In the following diagram, the Development and Testing teams work in the same environment with common access to all API Gateway configurations. Therefore, in this case, there is a single domain for all the development and testing API Gateway groups.
 
-![Shared environment topology](/Images/docbook/images/promotion/shared_env_topology.png =250x)
+![Shared environment topology|512x397,20%]](/Images/docbook/images/promotion/shared_env_topology.png)
 
 {{< alert title="Note" color="primary" >}}The API Gateway does not mandate a specific environment-to-domain configuration, and is flexible enough to work with any architecture. However, you should manage your environments in an environment and domain topology. Implementing each environment as a distinct API Gateway domain is a good starting point.{{< /alert >}}
 
