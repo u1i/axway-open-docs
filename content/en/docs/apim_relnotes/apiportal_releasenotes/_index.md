@@ -1,12 +1,11 @@
 ---
 title: API Portal 7.8 Release Notes
 linkTitle: API Portal 7.8
-weight: 30
 no_list: true
-date: 2019-08-08
+weight: 30
+date: 2019-08-08T00:00:00.000Z
 description: Learn about the new features and enhancements in this release.
 ---
-
 ## Summary
 
 API Portal provides an API consumer-facing interface that you can customize to match your corporate brand. API Portal is a layered product linked to API Manager, and requires both API Manager and API Gateway. For more information, see the API Gateway and API Manager documentation.
@@ -21,6 +20,8 @@ API Portal is available as a software installation or a virtualized deployment 
 The following new features and enhancements are available in this release.
 
 <!-- Add the new features here -->
+
+here's a new feature
 
 ## Limitations of this release
 
@@ -44,11 +45,11 @@ The following are known issues in this version of API Portal.
 If you change the API Portal language to Arabic (or any other right to left language) there are issues with page layout and alignment on the API Portal Home and Pricing pages, and some buttons are not visible. As a workaround, you can turn on development mode in JAI. Follow these steps:
 
 1. Log in to Joomla! Admin Interface (JAI).
-1. In the JAI top navigation bar, click **Extensions > Templates**.
-1. Click your template style (for example, `purity_III * Default`) to open it.
-1. Click the **General** tab.
-1. Change **Development Mode** to `ON`.
-1. Click **Save** and click **Close** to close the template style.
+2. In the JAI top navigation bar, click **Extensions > Templates**.
+3. Click your template style (for example, `purity_III * Default`) to open it.
+4. Click the **General** tab.
+5. Change **Development Mode** to `ON`.
+6. Click **Save** and click **Close** to close the template style.
 
 Related Issue: IAP-308
 
@@ -61,7 +62,7 @@ This section describes documentation enhancements, known issues, and related doc
 To find all available documents for this product version:
 
 1. Go to <https://docs.axway.com/bundle>.
-1. In the left pane Filters list, select your product or product version.
+2. In the left pane Filters list, select your product or product version.
 
 Customers with active support contracts need to log in to access restricted content.
 
@@ -76,6 +77,6 @@ The following reference documents are also available:
 
 The Axway Global Support team provides worldwide 24 x 7 support for customers with active support agreements.
 
-Email <support@axway.com> or visit <https://support.axway.com/>.
+Email <mailto:support@axway.com> or visit <https://support.axway.com/>.
 
 See [Get help with API Gateway](/csh?context=103&product=prod-api-gateway-77) in the [API Gateway Administrator Guide](/bundle/APIGateway_77_AdministratorGuide_allOS_en_HTML5/) for the information that you should be prepared to provide when you contact Axway Support.
