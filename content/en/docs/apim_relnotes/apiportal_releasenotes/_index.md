@@ -23,6 +23,8 @@ The following new features and enhancements are available in this release.
 
 here's a new feature
 
+another new feature
+
 ## Limitations of this release
 
 This release has the following limitations:
