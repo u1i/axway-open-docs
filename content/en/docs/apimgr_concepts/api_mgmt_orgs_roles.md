@@ -6,7 +6,7 @@
     "description": "Learn about the API administrator, organization administrator, and API consumer roles in API management. Understand the concepts and workflows in API management."
 }
 
-## Organizations and user roles in API Manager
+## Organizations and user roles in API Manager.
 
 Organization types in API Manager include the following:
 
