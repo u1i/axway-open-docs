@@ -6,6 +6,8 @@
     "description": "Integrate API Gateway to authenticate and authorize users for Identity Management servers including LDAP servers, CA SiteMinder, RSA Access Manager, Oracle Access Manager, and Oracle Entitlements Server."
 }
 
+Hello!
+
 API Gateway contains a set of message filters that directly or indirectly restrict access to resources or web services.
 
 Filters that directly control access include XML-signature verification, CA certificate chain verification, and SAML assertion verification. With these filters, policy decisions are made and enforced within API Gateway itself.
