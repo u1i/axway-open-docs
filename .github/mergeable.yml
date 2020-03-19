@@ -1,0 +1,57 @@
+version: 2
+mergeable:
+  - when: pull_request.*
+    validate:
+      - do: milestone
+        no_empty:
+          enabled: true # Cannot be empty when true.
+          message: 'No milestone. Every PR must be added to a Sprint milestone' # messages are optional
+        must_include:
+          regex: Sprint
+          message: 'Incorrect milestone. Please add to a Sprint milestone'
+      - do: project
+        no_empty:
+          enabled: true # Cannot be empty when true.
+          message: 'No project. Every PR must be added to a project'
+        must_include:
+          regex: 'Contributions and issues'
+          message: 'Incorrect project. Please add to the Contributions and issues project'
+    pass:
+      - do: comment
+        payload:
+          body: >
+            Message for maintainers - PR has a valid milestone and project.
+    fail:
+      - do: comment
+        payload:
+          body: >
+            Message for maintainers. PR does not have a valid milestone and project and cannot be merged.
+    error:
+      - do: comment
+        payload:
+          body: >
+            Message for maintainers. Errors occurred when validating PRs.
+  - when: issue.*
+    validate:
+      - do: project
+        no_empty:
+          enabled: true # Cannot be empty when true.
+          message: 'No project. Every issue must be added to a project'
+        must_include:
+          regex: 'Contributions and issues'
+          message: 'Incorrect project. Please add to the Contributions and issues project'
+    pass:
+      - do: comment
+        payload:
+          body: >
+            Message for maintainers - Issue has a valid project.
+    fail:
+      - do: comment
+        payload:
+          body: >
+            Message for maintainers. Issue does not have a valid project.
+    error:
+      - do: comment
+        payload:
+          body: >
+            Message for maintainers. Errors occurred when validating issues.
