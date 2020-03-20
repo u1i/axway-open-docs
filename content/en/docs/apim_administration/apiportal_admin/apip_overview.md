@@ -24,7 +24,7 @@ API Portal provides the following capabilities for both internal and external a
 * **Self-registration and profile management** — App developers can self-register and manage their profiles.
 * **Browsing and testing APIs in API Catalog** — API Catalog contains the APIs that have been registered in API Manager and are available for use. App developers can browse these APIs and their associated documentation, and invoke APIs using the built-in test capability. They can also download API definitions (Swagger or WSDL) and client SDKs (iOS, Android, Titanium, or Node.js).
 * **Creating and managing applications** — Applications allow your app developers to generate credentials (API Key, OAuth, or external credentials) to consume APIs that are protected by authentication.
-* **Monitoring API usage** — App developers can register their application's use of APIs through graphical real-time charts.
+* **Monitoring API usage** — App developers can register their application's use of APIs through graphical real-time charts [1].
 * **Pricing** - You can provide specific pricing information relating to APIs, products, plans, and services.
 * **Help Center** — Provides a central point for links that you can use to offer additional information, for example, FAQs, documentation, discussion forums, or further contact information.
 * **[Blog](http://stackideas.com/easyblog)** and **[Discussion forums](http://stackideas.com/easydiscuss)** - These are Joomla! plugins from a third-party vendor that you can use to share information and interact with the developer community.
@@ -59,3 +59,7 @@ This section describes the type of users and their roles in API Portal.
 * **Joomla! administrators** - Full control over API Portal configuration (look and feel, and localization).
 
 This is the default behavior for each type of user. You can change this behavior using the [user groups mapping](/docs/apim_administration/apiportal_admin/role_mapping) functionality of API Portal.
+
+## Notes
+
+[1] Metrics Database is required for this functionality and needs separate configuration.
